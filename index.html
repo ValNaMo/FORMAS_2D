@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>GRAFICACIÓN 2D</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      flex: 1;
+    }
+    @keyframes slideToLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    .animated-title {
+      animation: slideToLeft 1.5s ease-out;
+    }
+    .img-enlarged {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-info text-white text-center py-3">
+    <h1 class="animated-title">2.1 EDICIÓN DE FORMAS 2D</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="container mt-4 content">
+
+    <!-- Secciones centrales -->
+    <div class="row">
+      <!-- Sección izquierda con imagen original del logotipo -->
+      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+        <div class="card">
+          <div class="card-body text-center">
+            <h2 class="card-title">Logo Original</h2>
+            <img src="imagenes\Cartier-logo.png" alt="Logotipo Original" class="img-fluid img-enlarged">
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección derecha con imagen digitalizada -->
+      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+        <div class="card">
+          <div class="card-body text-center">
+            <h2 class="card-title">Logo Digitalizado</h2>
+            <img src="imagenes\logo.png" alt="Logotipo Digitalizado" class="img-fluid img-enlarged">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de las secciones centrales -->
+
+  </div>
+  <!-- Fin del contenido principal -->
+
+  <!-- Footer -->
+  <footer class="bg-danger text-white text-center py-3 fixed-bottom">
+    <p>&copy; 14-12-2023 NaMo Valeria. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts de Bootstrap y cualquier otro script que necesites -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
